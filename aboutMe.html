@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Thakkar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            background: #0071e3;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+        }
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #0071e3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .card a:hover {
+            background-color: #005bb5;
+        }
+        .skills, .contact {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0071e3;
+            color: #fff;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Aditya Thakkar</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to My Personal Website</h1>
+            <p>Discover my achievements, skills, and how to contact me.</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Scouting Achievements</h2>
+                <p>Life Scout, aspiring Eagle Scout, with leadership and outdoor skills.</p>
+                <a href="https://www.scouting.org/" target="_blank">Visit Scouting</a>
+            </div>
+            <div class="card">
+                <h2>USACO Achievements</h2>
+                <p>USACO Silver level, showcasing problem-solving and coding skills.</p>
+                <a href="http://www.usaco.org/" target="_blank">Visit USACO</a>
+            </div>
+            <div class="card">
+                <h2>FRC Robotics</h2>
+                <p>Member of world champion FRC Team 254, Cheesy Poofs (Software Division).</p>
+                <a href="https://www.team254.com/" target="_blank">Learn More</a>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Leadership</li>
+                <li>Programming (Python, Java, fastHTML)</li>
+                <li>Robotics</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="mailto:aditya.thakkar.2020@gmail.com">aditya.thakkar.2020@gmail.com</a></li>
+                <li>Phone: <a href="tel:+16508614105">(650) 861-4105</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/aditya-thakkar-37206a27a/" target="_blank">Connect</a></li>
+            </ul>
+        </div>
+        <footer>
+            <p>&copy; 2025 Aditya Thakkar. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
